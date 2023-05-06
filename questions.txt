@@ -1,0 +1,29 @@
+1.
+    int a = 20;
+    printf("%c%c%c%c", a);
+
+Why is the output like this? @�P
+
+In my opinion, the int take 32 bits in the computer and char take 8 bits, so the output should be 0 0 0 20?
+
+
+2.
+	
+    char *a = (char*)malloc(sizeof (char));
+    printf("the size of the string is : %d\n", sizeof(a));
+    printf("the size of char is : %d\n", sizeof(char));
+    printf("the length of the string is :%d", strlen(a));
+    scanf("%s", a);
+    printf("the size of the string is :%d\n", sizeof(a));
+    printf("the length of the string is :%d", strlen(a));
+    free(a);
+
+the size of the string is : 8
+the size of char is : 1
+the length of the string is :0
+qwqw
+the size of the string is :8
+the length of the string is :4
+
+
+Why does the a array alway 8 size?
